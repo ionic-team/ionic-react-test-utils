@@ -28,7 +28,7 @@
     "extends": "react-app"
   },
   "peerDependencies": {
-    "@ionic/react": "^4.11.10",
+    "@ionic/react": "*",
     "react": "^16.8.6",
     "@testing-library/react": "^9.4.0",
     "jest": "^24.9.0"
