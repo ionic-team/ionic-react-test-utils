@@ -2,12 +2,22 @@ import React, { useState, useEffect, useRef } from 'react';
 import { AlertButton } from '@ionic/react';
 
 const MockControllerInner: React.FC<{
+  backdropDismiss?: boolean;
+  enterAnimation?: any;
+  cssClass?: string;
   forwardedRef: any;
   isOpen: boolean,
   header?: string,
+  leaveAnimation?: any;
+  mode?: 'ios' | 'md',
   message?: string,
+  subHeader?: string,
   buttons?: AlertButton[];
+  translucent?: boolean;
   onDidDismiss?: () => void;
+  onDidPresent?: () => void;
+  onWillDismiss?: () => void;
+  onWillPresent?: () => void;
 }> = ({ children, isOpen, header = '', buttons = [], onDidDismiss, message, forwardedRef, ...rest }) => {
   const [open, setOpen] = useState(isOpen);
 
