@@ -37,6 +37,10 @@ function ionFocus(element: Document | Element | Window) {
   fireEvent(element, new CustomEvent('ionFocus'));
 }
 
+function ionInfinite(element: Document | Element | Window) {
+  fireEvent(element, new CustomEvent('ionInfinite'));
+}
+
 function ionInput(element: Document | Element | Window, value: string) {
   fireEvent(element, new CustomEvent('ionInput', {
     detail: {
@@ -110,6 +114,7 @@ export const ionFireEvent = Object.assign(fireEvent, {
   ionDrag,
   ionDidOpen,
   ionFocus,
+  ionInfinite,
   ionInput,
   ionPull,
   ionRefresh,
