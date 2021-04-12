@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 export const mockIonCheckbox: React.FC<{
   checked: boolean,
   onIonChange: (e: CustomEvent) => void,
+  onIonFocus: (e: CustomEvent) => void,
+  onIonBlur: (e: CustomEvent) => void,
   onClick: (e: React.SyntheticEvent<MouseEvent>) => void;
-}> = ({ checked, onIonChange, onClick, ...rest }) => {
+}> = ({ checked, onIonChange, onIonFocus, onClick, ...rest }) => {
 
   return (
     <input type="checkbox" onClick={e => {
       onIonChange(new CustomEvent('ionChange', { detail: { checked: e.currentTarget.checked } }));
-    }} role="toggle" {...rest} />
+    }} onFocus={() => { onIonFocus(new CustomEvent('ionFocus'))}} onBlur={() => { onIonFocus(new CustomEvent('ionBlur'))}} role="toggle" {...rest} />
   );
 };
