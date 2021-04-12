@@ -1,3 +1,4 @@
+import { IonInput } from '@ionic/react';
 import { mockController } from './mockController';
 import { mockIonCheckbox } from './mockIonCheckbox';
 
@@ -9,7 +10,7 @@ export function mockIonicReact() {
       IonActionSheet: mockController,
       IonAlert: mockController,
       IonCheckbox: mockIonCheckbox,
-      IonDatetime: mockController,
+      IonDatetime: IonInput,
       IonLoading: mockController,
       IonPicker: mockController,
       IonPopover: mockController,
