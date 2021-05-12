@@ -18,14 +18,17 @@ const MockControllerInner: React.FC<{
   onDidPresent?: () => void;
   onWillDismiss?: () => void;
   onWillPresent?: () => void;
-}> = ({ children, isOpen, header = '', buttons = [], onDidDismiss, message, forwardedRef, ...rest }) => {
+}> = ({ children, isOpen, header = '', buttons = [], onDidDismiss, onDidPresent, onWillDismiss, onWillPresent, message, forwardedRef, ...rest }) => {
   const [open, setOpen] = useState(isOpen);
 
   useEffect(() => {
     if (isOpen && !open) {
       setOpen(true);
+      onWillPresent && onWillPresent();
+      onDidPresent && onDidPresent();
     } else if (!isOpen && open) {
       setOpen(false);
+      onWillDismiss && onWillDismiss();
       onDidDismiss && onDidDismiss();
     }
   }, [isOpen]);
