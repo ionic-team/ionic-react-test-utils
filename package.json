@@ -29,9 +29,9 @@
   },
   "peerDependencies": {
     "@ionic/react": "*",
-    "react": "^16.8.6",
-    "@testing-library/react": "^9.4.0",
-    "jest": "^24.9.0"
+    "react": ">=16.8.6",
+    "@testing-library/react": ">=9.4.0",
+    "jest": ">=24.9.0"
   },
   "files": [
     "dist/**/*.*"
