@@ -2,6 +2,18 @@
 
 This is a set of helper methods to make testing easier in Ionic React with React Testing Library and Jest.
 
+## Installation
+
+```
+yarn add -D @ionic/react-test-utils
+```
+
+or
+
+```
+npm install --dev @ionic/react-test-utils
+```
+
 ## Custom ionFireEvent
 
 `ionFireEvent` extends [Testing Library's](https://testing-library.com/docs/dom-testing-library/api-events) `fireEvent` by adding the custom `ion*` events. This can be used as a drop in replacement for `fireEvent` or used in conjunction with.
