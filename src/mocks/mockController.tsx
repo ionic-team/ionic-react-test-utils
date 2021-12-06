@@ -29,6 +29,11 @@ const MockControllerInner: React.FC<{
   onWillPresent,
   message,
   forwardedRef,
+  backdropDismiss,
+  enterAnimation,
+  leaveAnimation,
+  cssClass,
+  subHeader,
   ...rest
 }) => {
   const [open, setOpen] = useState(isOpen);
