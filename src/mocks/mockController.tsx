@@ -14,6 +14,8 @@ const MockControllerInner: React.FC<{
   subHeader?: string,
   buttons?: AlertButton[];
   translucent?: boolean;
+  showBackdrop?: boolean;
+  keyboardClose?: boolean;
   onDidDismiss?: () => void;
   onDidPresent?: () => void;
   onWillDismiss?: () => void;
@@ -34,6 +36,8 @@ const MockControllerInner: React.FC<{
   leaveAnimation,
   cssClass,
   subHeader,
+  showBackdrop,
+  keyboardClose,
   ...rest
 }) => {
   const [open, setOpen] = useState(isOpen);
