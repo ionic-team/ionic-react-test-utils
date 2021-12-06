@@ -14,11 +14,32 @@ const MockControllerInner: React.FC<{
   subHeader?: string,
   buttons?: AlertButton[];
   translucent?: boolean;
+  showBackdrop?: boolean;
+  keyboardClose?: boolean;
   onDidDismiss?: () => void;
   onDidPresent?: () => void;
   onWillDismiss?: () => void;
   onWillPresent?: () => void;
-}> = ({ children, isOpen, header = '', buttons = [], onDidDismiss, onDidPresent, onWillDismiss, onWillPresent, message, forwardedRef, ...rest }) => {
+}> = ({
+  children,
+  isOpen,
+  header = '',
+  buttons = [],
+  onDidDismiss,
+  onDidPresent,
+  onWillDismiss,
+  onWillPresent,
+  message,
+  forwardedRef,
+  backdropDismiss,
+  enterAnimation,
+  leaveAnimation,
+  cssClass,
+  subHeader,
+  showBackdrop,
+  keyboardClose,
+  ...rest
+}) => {
   const [open, setOpen] = useState(isOpen);
 
   useEffect(() => {
