@@ -36,5 +36,20 @@ import { mockIonicReact } from '@ionic/react-test-utils';
 mockIonicReact();
 ```
 
+## waitForIonicReact
 
+This function waits for Ionic React to be fully initialized. Use this in tests that need to check the HTML as it will be rendered at runtime, where you aren't able to watch for specific elements to be loaded. For example, snapshot tests that should check a whole component without being tightly coupled to the markup.
 
+```jsx
+import { render } from '@testing-library/react';
+import { waitForIonicReact } from '@ionic/react-test-utils';
+import MyComponent from './MyComponent';
+
+describe('<MyComponent />', () => {
+  it('renders consistently', async () => {
+    const { baseElement } = render(<MyComponent/>);
+    await waitForIonicReact();
+    expect(baseElement).toMatchSnapshot();
+  });
+});
+```
