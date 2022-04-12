@@ -5,7 +5,7 @@
  * loaded. Example: snapshot tests that should check a whole component
  * without being tightly coupled to the markup.
  */
-export async function waitForIonicReady() {
+export async function waitForIonicReact() {
   return new Promise(resolve => {
     requestAnimationFrame(() => {
       requestAnimationFrame(resolve);
