@@ -1,8 +1,9 @@
-import { IonInput } from '@ionic/react';
+import { IonInput, setupIonicReact } from '@ionic/react';
 import { mockController } from './mockController';
 import { mockIonCheckbox } from './mockIonCheckbox';
 
 export function mockIonicReact() {
+  setupIonicReact();
   jest.mock('@ionic/react', () => {
     const rest = jest.requireActual('@ionic/react');
     return {
