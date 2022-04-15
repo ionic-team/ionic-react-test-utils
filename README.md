@@ -36,6 +36,16 @@ import { mockIonicReact } from '@ionic/react-test-utils';
 mockIonicReact();
 ```
 
+If you are using Ionic v6, you will also need to call `setupIonicReact`:
+
+```js
+import { mockIonicReact } from '@ionic/react-test-utils';
+import { setupIonicReact } from '@ionic/react';
+
+setupIonicReact();
+mockIonicReact();
+```
+
 ## waitForIonicReact
 
 This function waits for Ionic React to be fully initialized. Use this in any test that renders Ionic components, to ensure the rendered markup has all classes etc. that Ionic adds at runtime.
