@@ -64,4 +64,4 @@ describe('<MyComponent />', () => {
 });
 ```
 
-`waitForIonicReact` waits for the DOM to be stable, meaning no markup has changed for a certain period of time. This period is determined by the first parameter, `timeout`, which defaults to 750. There is also a global timeout determined by the second parameter, `maxWaitTime`. This defaults to 5000 (five seconds) and, if hit, will cause the function to fail early. If you find your tests are running too slow or not detecting all Ionic behaviors, try tweaking these values.
+`waitForIonicReact` waits for the DOM to be stable, meaning no markup has changed for a certain period of time. This period is determined by the first parameter, `timeout`, which defaults to 750 milliseconds. There is also a global timeout determined by the second parameter, `maxWaitTime`. This defaults to 5000 milliseconds (five seconds) and, if hit, will cause the function to fail early. If you find your tests are running too slow or not detecting all Ionic behaviors, try tweaking these values.

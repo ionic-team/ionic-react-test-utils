@@ -9,7 +9,7 @@ export async function waitForIonicReact(timeout = 750, maxWaitTime = 5000) {
     let stabilityTimer: NodeJS.Timeout;
     const globalTimer = setTimeout(() => {
       stopWaiting(false,
-        'Timed out waiting for DOM to be stable. Ensure your test doesn\'t make continual page updates, or try increasing maxWaitTime'
+        'Timed out waiting for DOM to be stable. Ensure your test doesn\'t make continual page updates, or try increasing maxWaitTime.'
       );
     }, maxWaitTime);
 
