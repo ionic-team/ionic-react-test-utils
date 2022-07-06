@@ -27,7 +27,7 @@ export async function waitForIonicReact(timeout = 750, retries = 50) {
 
     const stopWaiting = (isStable: boolean, result: string) => {
       observer.disconnect();
-      if(timer) clearTimeout(timer);
+      if (timer) clearTimeout(timer);
 
       if (isStable) {
         resolve(result);
