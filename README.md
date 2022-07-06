@@ -63,3 +63,5 @@ describe('<MyComponent />', () => {
   });
 });
 ```
+
+`waitForIonicReact` waits for the DOM to be stable, meaning no markup has changed for a certain period of time. This period is determined by the first parameter, `timeout`, which defaults to 750. The second parameter, `retries`, is the maximum number of DOM mutations allowed (default 50) before the function resolves early. If you find your tests are running too slow, try tweaking these values.
