@@ -1,4 +1,5 @@
 import { IonInput } from '@ionic/react';
+import { mockUseIonPicker } from './hooks/useIonPicker.mock';
 import { mockController } from './mockController';
 import { mockIonCheckbox } from './mockIonCheckbox';
 
@@ -16,7 +17,8 @@ export function mockIonicReact() {
       IonPopover: mockController,
       IonToast: mockController,
       IonModal: mockController,
-      IonToggle: mockIonCheckbox
+      IonToggle: mockIonCheckbox,
+      useIonPicker: mockUseIonPicker
     };
   });
 }
