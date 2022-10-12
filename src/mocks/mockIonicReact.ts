@@ -1,4 +1,4 @@
-import { mockUseIonPicker } from './hooks/useIonPicker.mock';
+import { mockUseIonPicker } from './hooks/mockUseIonPicker';
 import { mockController } from './mockController';
 import { mockIonCheckbox } from './mockIonCheckbox';
 
