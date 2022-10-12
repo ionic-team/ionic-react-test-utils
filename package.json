@@ -52,7 +52,7 @@
     "rimraf": "^2.6.1",
     "ts-jest": "^24.1.0",
     "tslint": "^5.6.0",
-    "typedoc": "^0.14.2",
+    "typedoc": "^0.23.16",
     "typescript": "^3.7.4",
     "uglify-js": "^3.2.0"
   },
