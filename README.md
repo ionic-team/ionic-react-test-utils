@@ -2,7 +2,7 @@
 
 **Note: This project has been deprecated and is no longer actively maintained.**
 
-**Use [Ionic Testing Library](https://ionicframework.com/docs/react/testing/introduction) for instructions on testing your Ionic React app.**
+**See the [Ionic Testing Library documentation](https://ionicframework.com/docs/react/testing/introduction) for instructions on testing your Ionic React app.**
 
 # Ionic React Test Utils
 
