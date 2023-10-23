@@ -1,3 +1,9 @@
+# Deprecation Notice
+
+**Note: This project has been deprecated and is no longer actively maintained.**
+
+**See the [Ionic Testing Library documentation](https://ionicframework.com/docs/react/testing/introduction) for instructions on testing your Ionic React app.**
+
 # Ionic React Test Utils
 
 This is a set of helper methods to make testing easier in Ionic React with React Testing Library and Jest.
